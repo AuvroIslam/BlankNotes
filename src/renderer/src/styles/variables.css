@@ -1,0 +1,54 @@
+:root {
+  /* Colors */
+  --color-bg: #f8f9fa;
+  --color-surface: #ffffff;
+  --color-surface-2: #f1f3f5;
+  --color-border: #dee2e6;
+  --color-border-light: #e9ecef;
+
+  --color-text-primary: #1a1a2e;
+  --color-text-secondary: #495057;
+  --color-text-muted: #868e96;
+
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-accent-subtle: #eff6ff;
+
+  --color-danger: #dc2626;
+  --color-danger-subtle: #fef2f2;
+
+  --color-success: #16a34a;
+  --color-success-subtle: #f0fdf4;
+
+  /* Sidebar */
+  --sidebar-width: 200px;
+  --sidebar-bg: #f1f3f5;
+
+  /* Toolbar */
+  --toolbar-height: 52px;
+  --toolbar-bg: #ffffff;
+
+  /* Typography */
+  --font-ui: 'Inter', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.08);
+
+  /* Transitions */
+  --transition-fast: 120ms ease;
+}

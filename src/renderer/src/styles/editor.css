@@ -1,0 +1,51 @@
+/* The scroll wrapper EditorContent renders */
+.editor-scroll-area > div {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* The actual contenteditable area */
+.ProseMirror {
+  outline: none;
+  flex: 1;
+  min-height: 100%;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--color-text-primary);
+  user-select: text;
+  cursor: text;
+}
+
+.ProseMirror p {
+  margin-bottom: 8px;
+}
+
+.ProseMirror ul {
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+
+.ProseMirror li {
+  margin-bottom: 4px;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: var(--color-text-muted);
+  pointer-events: none;
+  height: 0;
+}
+
+mark {
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+/* Inline-image NodeView selection: ProseMirror sets data-node-selected on selected nodes;
+   the ResizableImage NodeView handles its own outline. Disable the default ring. */
+.ProseMirror .ProseMirror-selectednode {
+  outline: none;
+}
